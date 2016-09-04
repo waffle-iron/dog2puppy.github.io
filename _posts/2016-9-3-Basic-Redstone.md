@@ -8,7 +8,7 @@ Today, many people in Minecraft use redstone to make awesome creations in MC and
 
 ## Basics
 
-###Torch Lader
+### Torch Lader
 ===
 ![Torch Lader](http://dog2puppy-github.tk/images/IMG_0407.png)
 
