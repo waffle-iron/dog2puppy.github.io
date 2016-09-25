@@ -1,4 +1,4 @@
-if (localStorage.getItem("firstVisit") == nil || localStorage.getItem("firstVisit") == null) {
+if (localStorage.getItem("firstVisit") == nil) {
   alert("Welcome to my website, visitor!");
   localStorage.setItem("firstVisit", true);
   if (confirm("Would you like to set some local settings??") == true) {
