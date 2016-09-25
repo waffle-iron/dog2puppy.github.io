@@ -1,4 +1,4 @@
-if (window.localStorage.getItem("firstVisit") !== nil) {
+if (window.localStorage.getItem("firstVisit")) {
   window.localStorage.setItem("firstVisit", false);
   alert("Welcome to my website, visitor!");
   if (confirm("Would you like to set some local settings??") == true) {
