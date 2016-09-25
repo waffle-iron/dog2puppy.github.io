@@ -10,15 +10,15 @@ Today, many people in Minecraft use redstone to make awesome creations in MC and
 
 ### Torch Lader
 ===
-![Torch Lader](http://dog2puppy-github.tk/images/IMG_0407.png)
+![Torch Lader](//dog2puppy-github.tk/images/IMG_0407.PNG)
 
 This is a easy way to send power up and down like a ladder. 
 
 ### Piston Stairs
 ===
-![Stairs](http://dog2puppy-github.tk/images/IMG_0408.png)
+![Stairs](//dog2puppy-github.tk/images/IMG_0408.PNG)
 
-![Stairs](http://dog2puppy-github.tk/images/IMG_0409.png)
+![Stairs](//dog2puppy-github.tk/images/IMG_0409.PNG)
 
 This is a easy way to make a stair system, although not efficient.
 
