@@ -10,7 +10,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
     <script type="text/javascript">
-    if (window.localStorage.getItem("firstVisit")) {
+    if (window.localStorage.getItem("firstVisit") == nil) {
       window.localStorage.setItem("firstVisit", false);
       alert("Welcome to my website, visitor!");
       if (confirm("Would you like to set some local settings??") == true) {
