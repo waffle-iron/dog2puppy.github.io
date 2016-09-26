@@ -10,11 +10,8 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
     <script type="text/javascript">
-    function setCookie(cname, cvalue, exdays) {
-        var d = new Date();
-        d.setTime(d.getTime() + (exdays*24*60*60*1000));
-        var expires = "expires="+d.toUTCString();
-        document.cookie = cname + "=" + cvalue + "; " + expires;
+    function setCookie(cname, cvalue) {
+        document.cookie = cname + "=" + cvalue + "; path=/";
     }
 
     function getCookie(cname) {
@@ -33,8 +30,8 @@
     }
       
     var firstVisit = getCookie("firstVisit");
-    if (user == "" || user == null) {
-        alert("Welcome to my site user!);
+    if (fistVisit == "" || firstVisit == null) {
+        alert("Welcome to my site user!");
         setCookie("firstVisit", false);
         if(confirm("Would you like to set up some local settings?") == true) {
           window.location = "//dog2puppy-github.tk/local-settings"
