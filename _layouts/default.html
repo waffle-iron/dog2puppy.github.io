@@ -9,7 +9,17 @@
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="//dog2puppy-github.tk/main.js"></script>
+    <script type="text/javascript">
+    if (window.localStorage.getItem("firstVisit")) {
+      window.localStorage.setItem("firstVisit", false);
+      alert("Welcome to my website, visitor!");
+      if (confirm("Would you like to set some local settings??") == true) {
+        window.location="//dog2puppy-github.tk/settings";
+      }else{
+        alert("Okay! You can always use the settings button at the top!");
+      }
+    }
+    </script>
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
