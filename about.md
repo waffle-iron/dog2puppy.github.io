@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+## A random, confused PHP developer
 
-### More Information
+Hi. I'm Dog2puppy. I code and develop stuff for websites and @PMMP. 
 
-A place to include any other types of information that you'd like to include about yourself.
+### My work
 
-### Contact me
+A lot of my work is at https://githu.com/Dog2puppy. 
 
-[email@domain.com](mailto:email@domain.com)
+Websites I've creatm
