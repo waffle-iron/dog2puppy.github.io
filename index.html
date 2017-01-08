@@ -6,7 +6,7 @@ layout: default
   {% for post in site.posts %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h1><a href="{{ site.baseurl }}{{ post.url }}#disqus_thread">{{ post.title }}</a></h1>
 
       <div class="entry">
         {{ post.excerpt }}
@@ -21,4 +21,5 @@ var idcomments_post_url;
 <script type="text/javascript" src="https://www.intensedebate.com/js/genericLinkWrapperV2.js"></script>-->
     </article>
   {% endfor %}
+  <script id="dsq-count-scr" src="//github-website.disqus.com/count.js" async></script>
 </div>
