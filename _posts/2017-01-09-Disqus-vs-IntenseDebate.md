@@ -1,5 +1,6 @@
 ---
-published: false
+layout: post
+title: Disqus vs. IntenseDebate
 ---
 Disqus:
 -Updated
