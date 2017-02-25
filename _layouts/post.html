@@ -3,7 +3,7 @@ layout: default
 ---
 
 <article class="post">
-  <h1>{{ page.title }}</h1>
+  <h1 class='title'>{{ page.title }}</h1>
 
   <div class="entry">
     {{ content }}
@@ -12,7 +12,7 @@ layout: default
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
-
+<center>
   <script type="text/javascript">
   ( function() {
     if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
@@ -22,6 +22,6 @@ layout: default
     document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
 }());
 </script>
-<script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>  
+  <script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script> </center> 
   {% include disqus.html %}
 </article>
