@@ -5,6 +5,8 @@
     <meta name="specificfeeds-verification-code" content="verified"/>
     <script async type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
     <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css" />
+    <script src="https://use.fontawesome.com/84d5db0eba.js"></script>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
@@ -21,26 +23,55 @@
   </head>
 
   <body>
-    <div class="wrapper-masthead">
       <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+        <nav class="nav">
+          <div class='nav-left'>
+            <a href="{{ site.baseurl }}/" class="site-avatar nav-item"><img src="{{ site.avatar }}" /><h3>Dog2puppy</h3></a>
+          </div>
+          <div class="nav-center">
+            <a class="nav-item" href='https://github.com/Dog2puppy'>
+              <span class="icon">
+                <i class="fa fa-github"></i>
+              </span>
+            </a>
+            <a class="nav-item" href='https://twitter.com/Dog2puppy'>
+              <span class="icon">
+                <i class="fa fa-twitter"></i>
+              </span>
+            </a>
           </div>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-            <a href="{{ site.baseurl }}/free-hosting/">Free Hosting</a>
-            <br>
-            <iframe src="https://discordapp.com/widget?id=284856747997265922&theme=dark" width="350" height="450" allowtransparency="true" frameborder="0"></iframe>
-          </nav>
-        </header>
+          <script>
+            function toggleMenu() {
+              var menu = $('.nav-menu')
+              if (menu.hasClass('is-active')) {
+                menu.removeClass('is-active');
+              }else{
+                menu.addClass('is-active');
+              }
+            }
+          </script>
+          
+            <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+            <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+            <span class="nav-toggle" onclick='toggleMenu()'>
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+
+            <!-- This "nav-menu" is hidden on mobile -->
+            <!-- Add the modifier "is-active" to display it on mobile -->
+            <div class="nav-right nav-menu">
+              <a class="nav-item" href='/'>
+                <i class="fa fa-home" aria-hidden="true"></i>Home
+              </a>
+              <a class="nav-item" href='/about'>
+                <i class="fa fa-user" aria-hidden="true"></i>About
+              </a>
+          </div>
+        </nav>
       </div>
-    </div>
 
     <div id="main" role="main" class="container">
       {{ content }}
@@ -49,6 +80,7 @@
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
+          <div class='content has-text-centered'>
           {% include svg-icons.html %}
           <script type="text/javascript">
   ( function() {
@@ -60,7 +92,7 @@
 }());
 </script>
 <script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>
-
+          </div>
         </footer>
       </div>
     </div>
