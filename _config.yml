@@ -9,7 +9,7 @@ name: Dog2puppy
 description: A random, confused PHP developer
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: //dog2puppy.tk/images/Dog2puppy.png
+avatar: https://dog2puppy.tk/images/Dog2puppy.png
 
 #
 # Flags below are optional
