@@ -2,9 +2,11 @@
 layout: default
 ---
 
+<section class="section">
+  <div class="container">
 <h1 class="title">{{ page.title }}</h1>
 
-<h2 class="subtitle">{{ page.date }}</h2>
+<h2 class="subtitle">{{ page.date | date_to_long_string }}</h2>
 
 <p>{{ page.content }}</p>
 
@@ -28,3 +30,5 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
